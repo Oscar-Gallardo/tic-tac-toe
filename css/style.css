@@ -1,0 +1,35 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    color: #4c6986;
+    font-family: "Merriweather Sans", sans-serif;
+}
+.wrapper {
+    align-items: center;
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+.restart {
+    align-items: center;
+    border: 2px solid #4c6986;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    font-weight: bold;
+    height: 50px;
+    justify-content: center;
+    margin-top: 30px;
+    transition: all 0.2s ease;
+    width: 175px;
+}
+.restart:hover {
+    background-color: #4c6986;
+    color: #fff;
+}
