@@ -16,6 +16,10 @@ body {
     margin: 0 auto;
     max-width: 1440px;
 }
+.title h1 {
+    font-size: 70px;
+    font-weight: bold;
+}
 .restart {
     align-items: center;
     border: 2px solid #4c6986;
@@ -32,4 +36,49 @@ body {
 .restart:hover {
     background-color: #4c6986;
     color: #fff;
+}
+.game {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+}
+.header {
+    display: flex;
+    color: #9a9a9a;
+    font-size: 24px;
+}
+.header .player-x {
+    border-bottom: 5px solid #eee;
+    flex: 1;
+    padding-bottom: 8px;
+}
+.header .player-o {
+    border-bottom: 5px solid #eee;
+    flex: 1;
+    padding-bottom: 8px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0px;
+    flex-grow: 1;
+    padding: 10px;
+}
+.grid-tile {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    font-size: 80px;
+    justify-content: center;
+}
+.grid-tile:hover {
+    background-color: #eee;
+}
+.grid-tile:not(:nth-child(3n)){
+    border-right: 3px solid rgba(137, 163, 189, 0.58);
+}
+.grid-tile:not(:nth-last-child(-n+3)) {
+    border-bottom: 3px solid rgba(137, 163, 189, 0.58);
 }
