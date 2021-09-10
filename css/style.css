@@ -48,12 +48,12 @@ body {
     color: #9a9a9a;
     font-size: 24px;
 }
-.header .player-x {
+.header .player-X {
     border-bottom: 5px solid #eee;
     flex: 1;
     padding-bottom: 8px;
 }
-.header .player-o {
+.header .player-O {
     border-bottom: 5px solid #eee;
     flex: 1;
     padding-bottom: 8px;
