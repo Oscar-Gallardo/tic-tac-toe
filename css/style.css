@@ -53,10 +53,18 @@ body {
     flex: 1;
     padding-bottom: 8px;
 }
+.header .player-X.active {
+    color: #42bed7;
+    border-color: #42bed7;
+}
 .header .player-O {
     border-bottom: 5px solid #eee;
     flex: 1;
     padding-bottom: 8px;
+}
+.header .player-O.active {
+    color: #d7bafb;
+    border-color: #d7bafb;
 }
 .grid {
     display: grid;
@@ -65,6 +73,9 @@ body {
     grid-gap: 0px;
     flex-grow: 1;
     padding: 10px;
+}
+.grid .player-winner span {
+    color: #23ce6b;
 }
 .grid-tile {
     align-items: center;
@@ -81,4 +92,10 @@ body {
 }
 .grid-tile:not(:nth-last-child(-n+3)) {
     border-bottom: 3px solid rgba(137, 163, 189, 0.58);
+}
+.grid-tile .x-type {
+    color: #42bed7;
+}
+.grid-tile .o-type {
+    color: #d7bafb;
 }

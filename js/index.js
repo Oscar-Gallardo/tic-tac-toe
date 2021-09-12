@@ -4,6 +4,8 @@ import GameView from "./GameView.js";
 let game = new Game();
 let gameView = new GameView();
 
+gameView.updateGrid(game);
+
 let tiles = document.querySelectorAll('.grid-tile');
 tiles.forEach((tile) => {
     tile.addEventListener('click', () => {
