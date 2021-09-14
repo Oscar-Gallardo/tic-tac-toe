@@ -12,9 +12,13 @@ body {
     align-items: center;
     display: flex;
     height: 800px;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
     max-width: 1440px;
+    padding: 80px;
+}
+.title {
+    max-width: 500px;
 }
 .title h1 {
     font-size: 70px;
@@ -40,8 +44,8 @@ body {
 .game {
     display: flex;
     flex-direction: column;
-    width: 500px;
     height: 500px;
+    width: 500px;
 }
 .header {
     display: flex;
@@ -98,4 +102,48 @@ body {
 }
 .grid-tile .o-type {
     color: #d7bafb;
+}
+
+@media only screen and (max-width: 1200px) {
+    .wrapper {
+        flex-direction: column;
+        padding: 40px;
+    }
+    .left-section {
+        margin-bottom: 50px;
+    }
+    .title h1 {
+        font-size: 50px;
+    }
+    .restart {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .wrapper {
+        flex-direction: column;
+        height: 690px;
+    }
+    .title h1 {
+        font-size: 30px;
+    }
+    .game {
+        height: 300px;
+        width: 300px;
+    }
+    .header {
+        margin-bottom: 30px;
+    }
+    .grid-tile {
+        font-size: 55px;
+    }
+    /* .left-section {
+        align-items: center;
+        display:flex;
+        margin-bottom: 50px;
+    }
+    .restart {
+        margin-top: 0;
+        margin-left: 80px;
+    } */
 }
